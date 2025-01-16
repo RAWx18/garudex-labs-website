@@ -8,10 +8,9 @@ import { Chart as ChartJS, CategoryScale, LinearScale, BarElement, Title, Toolti
 ChartJS.register(CategoryScale, LinearScale, BarElement, Title, Tooltip, Legend)
 
 const weeklyData = [
-  { date: '2023-05-01', improvement: 'Reduced average response time by 15%', videoUrl: '/videos/week1.mp4' },
-  { date: '2023-05-08', improvement: 'Increased incident detection accuracy by 10%', videoUrl: '/videos/week2.mp4' },
-  { date: '2023-05-15', improvement: 'Expanded coverage to 5 new intersections', videoUrl: '/videos/week3.mp4' },
-  { date: '2023-05-22', improvement: 'Implemented new AI model, boosting efficiency by 20%', videoUrl: '/videos/week4.mp4' },
+  { date: 'Nov 2023', improvement: 'Reduced average response time by 15%', videoUrl: '/videos/week1.mp4' },
+  { date: 'Dec 2023', improvement: 'Increased incident detection accuracy by 10%', videoUrl: '/videos/week2.mp4' },
+
 ]
 
 const data = {
@@ -49,7 +48,7 @@ export default function Progress() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           <div>
-            <h2 className="text-2xl font-bold mb-6 font-orbitron">Weekly Highlights</h2>
+            <h2 className="text-2xl font-bold mb-6 font-orbitron">Monthly Highlights</h2>
             {weeklyData.map((week, index) => (
               <motion.div
                 key={week.date}

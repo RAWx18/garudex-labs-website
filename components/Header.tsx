@@ -10,7 +10,6 @@ const navItems = [
   { name: 'Our Progress', href: '/progress' },
   { name: 'Team & Vision', href: '/team' },
   { name: 'R&D', href: '/rnd' },
-  { name: 'Social', href: '/social' },
   { name: 'Contact', href: '/contact' },
 ]
 
@@ -33,7 +32,7 @@ export default function Header() {
     >
       <nav className="container mx-auto px-4 py-4 flex justify-between items-center">
         <Link href="/" className="text-2xl font-bold font-orbitron text-saffron">
-          Garudex Lab
+          Garudex Labs
         </Link>
         <ul className="flex space-x-6">
           {navItems.map((item) => (

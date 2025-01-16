@@ -7,9 +7,15 @@ import { FileText, Video } from 'lucide-react'
 
 const papers = [
   {
-    title: 'Work in Progress',
-    date: '2023-05-15',
-    pdfUrl: '/dc-3.1.pdf',
+    title: 'November Report',
+    date: 'Nov 2024',
+    pdfUrl: '/reports/november_report.pdf',
+    videoUrl: '/videos/traffic-analysis.mp4',
+  },
+  {
+    title: 'December Report',
+    date: 'Dec 2024',
+    pdfUrl: '/reports/december_report.pdf',
     videoUrl: '/videos/traffic-analysis.mp4',
   },
  

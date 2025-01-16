@@ -107,7 +107,7 @@ export default function Contact() {
               </p>
               <div className="flex space-x-4">
                 <a
-                  href="https://twitter.com/garudexlab"
+                  href="https://x.com/GarudexLabs"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-modern-purple hover:text-purple-400 transition-colors duration-200"
@@ -115,21 +115,14 @@ export default function Contact() {
                   <Twitter size={24} />
                 </a>
                 <a
-                  href="https://www.linkedin.com/company/garudexlab"
+                  href="https://www.linkedin.com/company/garudex-labs/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-modern-purple hover:text-purple-400 transition-colors duration-200"
                 >
                   <Linkedin size={24} />
                 </a>
-                <a
-                  href="https://github.com/garudexlab"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-modern-purple hover:text-purple-400 transition-colors duration-200"
-                >
-                  <Github size={24} />
-                </a>
+               
                 <a
                   href="https://huggingface.co/garudexlab"
                   target="_blank"
