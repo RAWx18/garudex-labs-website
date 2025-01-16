@@ -63,18 +63,7 @@ export default function RnD() {
                   <FileText size={20} color='black' />
                   <span className='PDF'>View PDF</span>
                 </button>
-                {paper.videoUrl && (
-                  <button
-                    onClick={() => {
-                      setSelectedPaper(paper)
-                      setShowVideo(true)
-                    }}
-                    className="flex items-center space-x-2 bg-white text-modern-purple px-4 py-2 rounded-full hover:bg-gray-100 transition-colors duration-200"
-                  >
-                    <Video size={20} color='black'/>
-                    <span className='Video'>Watch Video</span>
-                  </button>
-                )}
+             
               </div>
             </motion.div>
           ))}

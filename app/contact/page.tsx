@@ -2,9 +2,9 @@
 
 import { motion } from 'framer-motion'
 import { useState } from 'react'
-import { Twitter, Linkedin, FileCode2, Github } from 'lucide-react'
+import { Twitter, Linkedin, FileCode2 } from 'lucide-react'
 
-export default function Contact() {
+export default function ContactPage() {
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -17,10 +17,10 @@ export default function Contact() {
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault()
-    // Handle form submission here (e.g., send data to an API)
-    console.log('Form submitted:', formData)
-    // Reset form after submission
-    setFormData({ name: '', email: '', message: '' })
+    const { name, email, message } = formData
+    const subject = "Contact Form Submission"
+    const body = `Name: ${name} Email: ${email} Message: ${message}`
+    window.location.href = `mailto:admin@garudexlabs.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`
   }
 
   return (
@@ -90,7 +90,7 @@ export default function Contact() {
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
               >
-                Send Message
+                Open Email Client
               </motion.button>
             </form>
           </motion.div>
@@ -122,7 +122,6 @@ export default function Contact() {
                 >
                   <Linkedin size={24} />
                 </a>
-               
                 <a
                   href="https://huggingface.co/garudexlab"
                   target="_blank"
