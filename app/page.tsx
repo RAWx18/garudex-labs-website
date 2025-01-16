@@ -1,10 +1,7 @@
 'use client'
 
-import React, { useRef } from 'react'
 import { motion } from 'framer-motion'
-import { useSpring, animated } from 'react-spring'
-import { Canvas, useFrame } from '@react-three/fiber'
-import { OrbitControls } from '@react-three/drei'
+
 
 
 

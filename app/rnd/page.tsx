@@ -2,7 +2,7 @@
 
 import { motion } from 'framer-motion'
 import { useState } from 'react'
-import { FileText, Video } from 'lucide-react'
+import { FileText } from 'lucide-react'
 
 
 const papers = [

@@ -2,42 +2,17 @@
 
 import { motion } from 'framer-motion'
 import { useState } from 'react'
-import { Bar } from 'react-chartjs-2'
+
 import { Chart as ChartJS, CategoryScale, LinearScale, BarElement, Title, Tooltip, Legend } from 'chart.js'
 
 ChartJS.register(CategoryScale, LinearScale, BarElement, Title, Tooltip, Legend)
 
 const weeklyData = [
-  { date: 'Nov 2023', improvement: 'Reduced average response time by 15%', videoUrl: '/videos/week1.mp4' },
-  { date: 'Dec 2023', improvement: 'Increased incident detection accuracy by 10%', videoUrl: '/videos/week2.mp4' },
+  { date: 'Jan 2025', improvement: 'Coming Soon', videoUrl: '' },
+
 
 ]
 
-const data = {
-  labels: weeklyData.map(week => week.date),
-  datasets: [
-    {
-      label: 'Efficiency Improvement',
-      data: [15, 25, 30, 50],
-      backgroundColor: 'rgba(138, 43, 226, 0.6)',
-      borderColor: 'rgb(138, 43, 226)',
-      borderWidth: 1,
-    },
-  ],
-}
-
-const options = {
-  responsive: true,
-  plugins: {
-    legend: {
-      position: 'top' as const,
-    },
-    title: {
-      display: true,
-      text: 'Weekly Efficiency Improvement',
-    },
-  },
-}
 
 export default function Progress() {
   const [selectedWeek, setSelectedWeek] = useState(0)
@@ -57,7 +32,7 @@ export default function Progress() {
                 whileTap={{ scale: 0.95 }}
                 onClick={() => setSelectedWeek(index)}
               >
-                <h3 className="text-xl font-bold mb-2 text-white">{new Date(week.date).toLocaleDateString()}</h3>
+                <h3 className="text-xl font-bold mb-2 text-white">{week.date}</h3>
                 <p className="text-gray-200">{week.improvement}</p>
               </motion.div>
             ))}
